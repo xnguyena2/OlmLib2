@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="crypto-algorithms">
+      <UniqueIdentifier>{17e6fa38-0de6-4f36-922e-f5272d44e441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ed25519">
+      <UniqueIdentifier>{383ae4b2-326f-4250-a33a-6454aeac3626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ed25519\src">
+      <UniqueIdentifier>{ccd6c9ef-e12f-4905-895f-452d8213fb06}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\olm\account.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\base64.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\cipher.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\crypto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\inbound_group_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\list.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\megolm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\memory.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\message.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\olm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\olm.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\outbound_group_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\pickle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\pickle.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\pickle_encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\ratchet.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\session.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\olm\utility.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\aes.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\arcfour.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\base64.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\blowfish.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\des.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\md2.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\md5.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\rot-13.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\sha1.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\ed25519.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\fe.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\fixedint.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\ge.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\precomp_data.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\sc.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="ed25519\src\sha512.h">
+      <Filter>ed25519\src</Filter>
+    </ClInclude>
+    <ClInclude Include="curve25519-donna.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="crypto-algorithms\sha256.h">
+      <Filter>crypto-algorithms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\account.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cipher.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inbound_group_session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\megolm.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\olm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\outbound_group_session.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pickle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pickle_encoding.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ratchet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\aes.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\arcfour.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\base64.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\blowfish.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\des.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\md2.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\md5.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\rot-13.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\sha1.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="crypto-algorithms\sha256.c">
+      <Filter>crypto-algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\add_scalar.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\fe.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\ge.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\key_exchange.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\keypair.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\sc.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\seed.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\sha512.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\sign.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="ed25519\src\verify.c">
+      <Filter>ed25519\src</Filter>
+    </ClCompile>
+    <ClCompile Include="curve25519-donna.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
