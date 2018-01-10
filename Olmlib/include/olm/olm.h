@@ -44,7 +44,7 @@ typedef struct OlmUtility OlmUtility;
 void olm_get_library_version(uint8_t *major, uint8_t *minor, uint8_t *patch);
 
 /** The size of an account object in bytes */
-size_t olm_account_size();
+__declspec(dllexport) size_t olm_account_size();
 
 /** The size of a session object in bytes */
 size_t olm_session_size();
@@ -54,13 +54,13 @@ size_t olm_utility_size();
 
 /** Initialise an account object using the supplied memory
  *  The supplied memory must be at least olm_account_size() bytes */
-OlmAccount * olm_account(
+__declspec(dllexport) OlmAccount * olm_account(
     void * memory
 );
 
 /** Initialise a session object using the supplied memory
  *  The supplied memory must be at least olm_session_size() bytes */
-OlmSession * olm_session(
+__declspec(dllexport) OlmSession * olm_session(
     void * memory
 );
 
@@ -163,20 +163,20 @@ size_t olm_unpickle_session(
 );
 
 /** The number of random bytes needed to create an account.*/
-size_t olm_create_account_random_length(
+__declspec(dllexport) size_t olm_create_account_random_length(
     OlmAccount * account
 );
 
 /** Creates a new account. Returns olm_error() on failure. If weren't
  * enough random bytes then olm_account_last_error() will be
  * "NOT_ENOUGH_RANDOM" */
-size_t olm_create_account(
+__declspec(dllexport) size_t olm_create_account(
     OlmAccount * account,
     void * random, size_t random_length
 );
 
 /** The size of the output buffer needed to hold the identity keys */
-size_t olm_account_identity_keys_length(
+__declspec(dllexport) size_t olm_account_identity_keys_length(
     OlmAccount * account
 );
 
@@ -184,28 +184,28 @@ size_t olm_account_identity_keys_length(
  * identity_keys output buffer. Returns olm_error() on failure. If the
  * identity_keys buffer was too small then olm_account_last_error() will be
  * "OUTPUT_BUFFER_TOO_SMALL". */
-size_t olm_account_identity_keys(
+__declspec(dllexport) size_t olm_account_identity_keys(
     OlmAccount * account,
     void * identity_keys, size_t identity_key_length
 );
 
 
 /** The length of an ed25519 signature encoded as base64. */
-size_t olm_account_signature_length(
+__declspec(dllexport) size_t olm_account_signature_length(
     OlmAccount * account
 );
 
 /** Signs a message with the ed25519 key for this account. Returns olm_error()
  * on failure. If the signature buffer was too small then
  * olm_account_last_error() will be "OUTPUT_BUFFER_TOO_SMALL" */
-size_t olm_account_sign(
+__declspec(dllexport) size_t olm_account_sign(
     OlmAccount * account,
     void const * message, size_t message_length,
     void * signature, size_t signature_length
 );
 
 /** The size of the output buffer needed to hold the one time keys */
-size_t olm_account_one_time_keys_length(
+__declspec(dllexport) size_t olm_account_one_time_keys_length(
     OlmAccount * account
 );
 
@@ -227,7 +227,7 @@ size_t olm_account_one_time_keys_length(
  * <p>
  * If the one_time_keys buffer was too small then olm_account_last_error()
  * will be "OUTPUT_BUFFER_TOO_SMALL". */
-size_t olm_account_one_time_keys(
+__declspec(dllexport) size_t olm_account_one_time_keys(
     OlmAccount * account,
     void * one_time_keys, size_t one_time_keys_length
 );
@@ -244,7 +244,7 @@ size_t olm_account_max_number_of_one_time_keys(
 
 /** The number of random bytes needed to generate a given number of new one
  * time keys. */
-size_t olm_account_generate_one_time_keys_random_length(
+__declspec(dllexport) size_t olm_account_generate_one_time_keys_random_length(
     OlmAccount * account,
     size_t number_of_keys
 );
@@ -253,14 +253,14 @@ size_t olm_account_generate_one_time_keys_random_length(
  * by this account exceeds max_number_of_one_time_keys() then the old keys are
  * discarded. Returns olm_error() on error. If the number of random bytes is
  * too small then olm_account_last_error() will be "NOT_ENOUGH_RANDOM". */
-size_t olm_account_generate_one_time_keys(
+__declspec(dllexport) size_t olm_account_generate_one_time_keys(
     OlmAccount * account,
     size_t number_of_keys,
     void * random, size_t random_length
 );
 
 /** The number of random bytes needed to create an outbound session */
-size_t olm_create_outbound_session_random_length(
+__declspec(dllexport) size_t olm_create_outbound_session_random_length(
     OlmSession * session
 );
 
@@ -269,7 +269,7 @@ size_t olm_create_outbound_session_random_length(
  * decoded as base64 then olm_session_last_error() will be "INVALID_BASE64"
  * If there weren't enough random bytes then olm_session_last_error() will
  * be "NOT_ENOUGH_RANDOM". */
-size_t olm_create_outbound_session(
+__declspec(dllexport) size_t olm_create_outbound_session(
     OlmSession * session,
     OlmAccount * account,
     void const * their_identity_key, size_t their_identity_key_length,
@@ -285,7 +285,7 @@ size_t olm_create_outbound_session(
  * couldn't be decoded then then olm_session_last_error() will be
  * "BAD_MESSAGE_FORMAT". If the message refers to an unknown one time
  * key then olm_session_last_error() will be "BAD_MESSAGE_KEY_ID". */
-size_t olm_create_inbound_session(
+__declspec(dllexport) size_t olm_create_inbound_session(
     OlmSession * session,
     OlmAccount * account,
     void * one_time_key_message, size_t message_length
@@ -364,18 +364,18 @@ size_t olm_remove_one_time_keys(
  * OLM_MESSAGE_TYPE_PRE_KEY if the message will be a PRE_KEY message.
  * Returns OLM_MESSAGE_TYPE_MESSAGE if the message will be a normal message.
  * Returns olm_error on failure. */
-size_t olm_encrypt_message_type(
+__declspec(dllexport) size_t olm_encrypt_message_type(
     OlmSession * session
 );
 
 /** The number of random bytes needed to encrypt the next message. */
-size_t olm_encrypt_random_length(
+__declspec(dllexport) size_t olm_encrypt_random_length(
     OlmSession * session
 );
 
 /** The size of the next message in bytes for the given number of plain-text
  * bytes. */
-size_t olm_encrypt_message_length(
+__declspec(dllexport) size_t olm_encrypt_message_length(
     OlmSession * session,
     size_t plaintext_length
 );
@@ -386,7 +386,7 @@ size_t olm_encrypt_message_length(
  * olm_session_last_error() will be "OUTPUT_BUFFER_TOO_SMALL". If there
  * weren't enough random bytes then olm_session_last_error() will be
  * "NOT_ENOUGH_RANDOM". */
-size_t olm_encrypt(
+__declspec(dllexport) size_t olm_encrypt(
     OlmSession * session,
     void const * plaintext, size_t plaintext_length,
     void * random, size_t random_length,
@@ -401,7 +401,7 @@ size_t olm_encrypt(
  * protocol then olm_session_last_error() will be "BAD_MESSAGE_VERSION".
  * If the message couldn't be decoded then olm_session_last_error() will be
  * "BAD_MESSAGE_FORMAT". */
-size_t olm_decrypt_max_plaintext_length(
+__declspec(dllexport) size_t olm_decrypt_max_plaintext_length(
     OlmSession * session,
     size_t message_type,
     void * message, size_t message_length
@@ -418,7 +418,7 @@ size_t olm_decrypt_max_plaintext_length(
  *  olm_session_last_error() will be BAD_MESSAGE_FORMAT".
  *  If the MAC on the message was invalid then olm_session_last_error() will
  *  be "BAD_MESSAGE_MAC". */
-size_t olm_decrypt(
+__declspec(dllexport) size_t olm_decrypt(
     OlmSession * session,
     size_t message_type,
     void * message, size_t message_length,

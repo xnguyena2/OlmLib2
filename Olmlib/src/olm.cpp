@@ -131,7 +131,7 @@ const char * olm_utility_last_error(
     return _olm_error_to_string(error);
 }
 
-size_t olm_account_size() {
+__declspec(dllexport) size_t olm_account_size() {
     return sizeof(olm::Account);
 }
 
@@ -144,7 +144,7 @@ size_t olm_utility_size() {
     return sizeof(olm::Utility);
 }
 
-OlmAccount * olm_account(
+__declspec(dllexport) OlmAccount * olm_account(
     void * memory
 ) {
     olm::unset(memory, sizeof(olm::Account));
@@ -152,7 +152,7 @@ OlmAccount * olm_account(
 }
 
 
-OlmSession * olm_session(
+__declspec(dllexport) OlmSession * olm_session(
     void * memory
 ) {
     olm::unset(memory, sizeof(olm::Session));
@@ -304,14 +304,14 @@ size_t olm_unpickle_session(
 }
 
 
-size_t olm_create_account_random_length(
+__declspec(dllexport) size_t olm_create_account_random_length(
     OlmAccount * account
 ) {
     return from_c(account)->new_account_random_length();
 }
 
 
-size_t olm_create_account(
+__declspec(dllexport) size_t olm_create_account(
     OlmAccount * account,
     void * random, size_t random_length
 ) {
@@ -321,14 +321,14 @@ size_t olm_create_account(
 }
 
 
-size_t olm_account_identity_keys_length(
+__declspec(dllexport) size_t olm_account_identity_keys_length(
     OlmAccount * account
 ) {
     return from_c(account)->get_identity_json_length();
 }
 
 
-size_t olm_account_identity_keys(
+__declspec(dllexport) size_t olm_account_identity_keys(
     OlmAccount * account,
     void * identity_keys, size_t identity_key_length
 ) {
@@ -338,14 +338,14 @@ size_t olm_account_identity_keys(
 }
 
 
-size_t olm_account_signature_length(
+__declspec(dllexport) size_t olm_account_signature_length(
     OlmAccount * account
 ) {
     return b64_output_length(from_c(account)->signature_length());
 }
 
 
-size_t olm_account_sign(
+__declspec(dllexport) size_t olm_account_sign(
     OlmAccount * account,
     void const * message, size_t message_length,
     void * signature, size_t signature_length
@@ -364,14 +364,14 @@ size_t olm_account_sign(
 }
 
 
-size_t olm_account_one_time_keys_length(
+__declspec(dllexport) size_t olm_account_one_time_keys_length(
     OlmAccount * account
 ) {
     return from_c(account)->get_one_time_keys_json_length();
 }
 
 
-size_t olm_account_one_time_keys(
+__declspec(dllexport) size_t olm_account_one_time_keys(
     OlmAccount * account,
     void * one_time_keys_json, size_t one_time_key_json_length
 ) {
@@ -395,7 +395,7 @@ size_t olm_account_max_number_of_one_time_keys(
 }
 
 
-size_t olm_account_generate_one_time_keys_random_length(
+__declspec(dllexport) size_t olm_account_generate_one_time_keys_random_length(
     OlmAccount * account,
     size_t number_of_keys
 ) {
@@ -403,7 +403,7 @@ size_t olm_account_generate_one_time_keys_random_length(
 }
 
 
-size_t olm_account_generate_one_time_keys(
+__declspec(dllexport) size_t olm_account_generate_one_time_keys(
     OlmAccount * account,
     size_t number_of_keys,
     void * random, size_t random_length
@@ -417,14 +417,14 @@ size_t olm_account_generate_one_time_keys(
 }
 
 
-size_t olm_create_outbound_session_random_length(
+__declspec(dllexport) size_t olm_create_outbound_session_random_length(
     OlmSession * session
 ) {
     return from_c(session)->new_outbound_session_random_length();
 }
 
 
-size_t olm_create_outbound_session(
+__declspec(dllexport) size_t olm_create_outbound_session(
     OlmSession * session,
     OlmAccount * account,
     void const * their_identity_key, size_t their_identity_key_length,
@@ -457,7 +457,7 @@ size_t olm_create_outbound_session(
 }
 
 
-size_t olm_create_inbound_session(
+__declspec(dllexport) size_t olm_create_inbound_session(
     OlmSession * session,
     OlmAccount * account,
     void * one_time_key_message, size_t message_length
@@ -594,21 +594,21 @@ size_t olm_remove_one_time_keys(
 }
 
 
-size_t olm_encrypt_message_type(
+__declspec(dllexport) size_t olm_encrypt_message_type(
     OlmSession * session
 ) {
     return size_t(from_c(session)->encrypt_message_type());
 }
 
 
-size_t olm_encrypt_random_length(
+__declspec(dllexport) size_t olm_encrypt_random_length(
     OlmSession * session
 ) {
     return from_c(session)->encrypt_random_length();
 }
 
 
-size_t olm_encrypt_message_length(
+__declspec(dllexport) size_t olm_encrypt_message_length(
     OlmSession * session,
     size_t plaintext_length
 ) {
@@ -618,7 +618,7 @@ size_t olm_encrypt_message_length(
 }
 
 
-size_t olm_encrypt(
+__declspec(dllexport) size_t olm_encrypt(
     OlmSession * session,
     void const * plaintext, size_t plaintext_length,
     void * random, size_t random_length,
@@ -645,7 +645,7 @@ size_t olm_encrypt(
 }
 
 
-size_t olm_decrypt_max_plaintext_length(
+__declspec(dllexport) size_t olm_decrypt_max_plaintext_length(
     OlmSession * session,
     size_t message_type,
     void * message, size_t message_length
@@ -662,7 +662,7 @@ size_t olm_decrypt_max_plaintext_length(
 }
 
 
-size_t olm_decrypt(
+__declspec(dllexport) size_t olm_decrypt(
     OlmSession * session,
     size_t message_type,
     void * message, size_t message_length,

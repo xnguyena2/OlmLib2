@@ -1,4 +1,5 @@
-﻿  pickle_encoding.c
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  pickle_encoding.c
   outbound_group_session.c
   megolm.c
   inbound_group_session.c
@@ -77,6 +78,6 @@ c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\src\pi
   account.cpp
   Generating Code...
 Debug\base64.obj : warning LNK4042: object specified more than once; extras ignored
-     Creating library c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Debug\Olmlib.lib and object c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Debug\Olmlib.exp
-  Olmlib.vcxproj -> c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Debug\Olmlib.dll
-  Olmlib.vcxproj -> c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Debug\Olmlib.pdb (Full PDB)
+     Creating library ..\Test\bin\Debug\Olmlib.lib and object ..\Test\bin\Debug\Olmlib.exp
+  Olmlib.vcxproj -> C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Olmlib\..\Test\bin\Debug\Olmlib.dll
+  Olmlib.vcxproj -> ..\Test\bin\Debug\Olmlib.pdb (Full PDB)

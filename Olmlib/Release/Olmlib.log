@@ -1,4 +1,6 @@
-﻿  aes.c
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\release\crypto.obj' because it is being used by another process.
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(368,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  aes.c
   arcfour.c
   base64.c
 crypto-algorithms\base64.c(90): warning C4101: 'ch': unreferenced local variable
@@ -74,9 +76,9 @@ src\session.cpp(130): warning C4800: 'const _olm_curve25519_public_key *': forci
 src\session.cpp(224): warning C4800: 'const _olm_curve25519_public_key *': forcing value to bool 'true' or 'false' (performance warning)
   utility.cpp
 Release\base64.obj : warning LNK4042: object specified more than once; extras ignored
-     Creating library c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Release\Olmlib.lib and object c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Release\Olmlib.exp
+     Creating library ..\Test\bin\Debug\Olmlib.lib and object ..\Test\bin\Debug\Olmlib.exp
   Generating code
-  All 139 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 276 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Finished generating code
-  Olmlib.vcxproj -> c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Release\Olmlib.dll
-  Olmlib.vcxproj -> c:\users\nguyen phong\documents\visual studio 2015\Projects\OlmLib\Release\Olmlib.pdb (Full PDB)
+  Olmlib.vcxproj -> C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Olmlib\..\Test\bin\Debug\Olmlib.dll
+  Olmlib.vcxproj -> ..\Test\bin\Debug\Olmlib.pdb (Full PDB)

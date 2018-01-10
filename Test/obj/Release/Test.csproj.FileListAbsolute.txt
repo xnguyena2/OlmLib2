@@ -1,0 +1,6 @@
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\bin\Release\Test.exe.config
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\obj\Release\Test.csprojResolveAssemblyReference.cache
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\bin\Release\Test.exe
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\bin\Release\Test.pdb
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\obj\Release\Test.exe
+C:\Users\Nguyen Phong\Documents\Visual Studio 2015\Projects\OlmLib\Test\obj\Release\Test.pdb

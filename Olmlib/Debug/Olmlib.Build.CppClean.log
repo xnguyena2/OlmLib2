@@ -36,11 +36,12 @@ c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\ratchet.obj
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\session.obj
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\utility.obj
-c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\exampleclient\bin\debug\olmlib.ilk
-c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\exampleclient\bin\debug\olmlib.dll
-c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\exampleclient\bin\debug\olmlib.pdb
-c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\exampleclient\bin\debug\olmlib.lib
-c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\exampleclient\bin\debug\olmlib.exp
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\debug\olmlib.ilk
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\debug\olmlib.dll
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\debug\olmlib.pdb
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\debug\olmlib.lib
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\debug\olmlib.exp
+c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\..\test\bin\debug\olmlib.dll
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\olmlib.tlog\cl.command.1.tlog
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\olmlib.tlog\cl.read.1.tlog
 c:\users\nguyen phong\documents\visual studio 2015\projects\olmlib\olmlib\debug\olmlib.tlog\cl.write.1.tlog
